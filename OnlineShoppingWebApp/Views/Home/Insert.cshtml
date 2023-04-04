@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Insert";
+}
+
+<h2>Insert new flower</h2>
+
+<form method="post" action="/home/insert">
+    <div class="form-group">
+        <label for="id">ID:</label>
+        <input type="text" class="form-control" id="id" name="id">
+    </div>
+    <div class="form-group">
+        <label for="title">Title:</label>
+        <input type="text" class="form-control" id="title" name="title">
+    </div>
+    <div class="form-group">
+        <label for="description">Description:</label>
+        <input type="text" class="form-control" id="description" name="description">
+    </div>
+    <div class="form-group">
+        <label for="number">Unit Price:</label>
+        <input type="number" class="form-control" id="unitprice" name="unitprice">
+    </div>
+    <div class="form-group">
+        <label for="title">Quantity:</label>
+        <input type="number" class="form-control" id="quantity" name="quantity">
+    </div>
+    <div class="form-group">
+        <label for="image">Image:</label>
+        <input type="text" class="form-control" id="image" name="imageurl">
+    </div>
+    <div class="form-group">
+        <label for="title">Category:</label>
+        <input type="text" class="form-control" id="category" name="category">
+    </div>
+
+    <button type="submit" class="btn btn-default">Insert</button>
+</form>

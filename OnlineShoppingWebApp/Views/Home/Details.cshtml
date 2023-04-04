@@ -1,0 +1,20 @@
+﻿@using OnlineShoppingWebApp.Models
+
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+@{
+    Product theProduct = (Product)this.ViewData["flower"];
+
+    <img src="@theProduct.ImageUrl" height="100" width="100" />
+    <p> Id: @theProduct.Id </p>
+    <p>Title: @theProduct.Title </p>
+    <p> Description: @theProduct.Description </p>
+    <p> Unit Price: @theProduct.UnitPrice </p>
+    <p> Quantity: @theProduct.Quantity </p>
+    <a href="/home/update/@theProduct.Id">Update</a> <a href = "/home/delete/@theProduct.Id" > Delete </a >
+}
+        

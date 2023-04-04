@@ -1,0 +1,20 @@
+﻿@using OnlineShoppingWebApp.Models;
+@model IEnumerable<Product>
+ 
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<h3>Todays Fresh Flowers</h3>
+@{
+    //List<Product> allFlowers = ViewBag.flowers;
+   // List<Product> allFlowers = (List<Product>)ViewData["flowers"];
+    
+    <a href="/home/insert">Insert new Flower</a>
+    foreach( Product product in @Model)
+    {
+             <p><a href="/home/details/@product.Id">@product.Title</a></p>
+    }
+  }
